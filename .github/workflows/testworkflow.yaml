@@ -1,0 +1,8 @@
+name: Testing workflow
+on: workflow_dispatch
+jobs:
+  testworkflow:
+     runs-on: ubuntu-latest
+     steps:
+       - name: download repo on runner
+         uses: actions/checkout@v3
